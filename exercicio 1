@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+
+int inteiro =42;
+float real = 3.14;
+char caracters= 'd';
+
+int *ponteiroInt = &inteiro;
+float *ponteiroReal = &real;
+char *ponteiroCaracters = &caracters;
+printf("------------VALORES ORIGINAIS------------");
+printf("\nvalor do inteiro e: %d", inteiro);
+printf("\nvalor do real e: %.2f", real);
+printf("\no caracter do char e: %c\n", caracters);
+
+*ponteiroInt=50;
+*ponteiroReal= 4.13;
+*ponteiroCaracters='c';
+printf("\n------------VALORES MODIFICADOS------------");
+printf("\nvalor do inteiro e: %d", *ponteiroInt);
+printf("\nvalor do real e: %.2f", *ponteiroReal);
+printf("\no caracter do char e: %c",*ponteiroCaracters);
+
+
+}
